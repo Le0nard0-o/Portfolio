@@ -1,178 +1,243 @@
 <!DOCTYPE HTML>
-<!--
-	Portefólio pessoal — baseado em HTML5 UP
-	Adaptado e simplificado
--->
-<html lang="pt">
-<head>
-	<title>Portefólio | O teu nome</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<style>
-		/* Fundo bege claro */
-		body {
-			background-color: #f4efe9;
-		}
+<html>
+	<head>
+		<title>Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-		/* Botão menu */
-		.menu-toggle {
-			position: fixed;
-			top: 1.2rem;
-			right: 1.2rem;
-			background: #1e252d;
-			color: #fff;
-			border: none;
-			padding: 0.6rem 0.9rem;
-			font-size: 1rem;
-			cursor: pointer;
-			z-index: 1001;
-		}
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
 
-		/* Menu dropdown */
-		#nav {
-			position: fixed;
-			top: 0;
-			right: -260px;
-			width: 260px;
-			height: 100%;
-			background: #ffffff;
-			transition: right 0.3s ease;
-			z-index: 1000;
-			padding-top: 4rem;
-		}
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+								</a>
 
-		#nav.active {
-			right: 0;
-		}
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
 
-		#nav ul.links {
-			display: flex;
-			flex-direction: column;
-		}
-
-		#nav ul.links li {
-			border-top: 1px solid #eee;
-		}
-	</style>
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
-<body class="is-preload">
-
-	<!-- Wrapper -->
-	<div id="wrapper" class="fade-in">
-
-		<!-- Intro -->
-		<div id="intro">
-			<h1>Olá, eu sou<br />O teu nome</h1>
-			<p>Licenciado em Informática · Desenvolvimento Web</p>
-			<ul class="actions">
-				<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continuar</a></li>
-			</ul>
-		</div>
-
-		<!-- Header -->
-		<header id="header">
-			<a href="index.html" class="logo">Portefólio</a>
-		</header>
-
-		<!-- Nav -->
-		<!-- Botão Menu -->
-		<button class="menu-toggle" onclick="toggleMenu()">Menu</button>
-
-		<nav id="nav">
-			<ul class="links">
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">Sobre mim</a></li>
-				<li><a href="skills.html">Competências</a></li>
-				<li><a href="projects.html">Projectos</a></li>
-			</ul>
-		</nav>
-
-		<!-- Main -->
-		<div id="main">
-
-			<!-- Apresentação -->
-			<section class="post featured">
-				<header class="major">
-					<h2>Desenvolvedor Web</h2>
-					<p>Interesse em desenvolvimento backend e full-stack, com foco em soluções simples, funcionais e bem estruturadas.</p>
-				</header>
-			</section>
-
-			<!-- Destaques rápidos -->
-			<section class="posts">
-				<article>
-					<header>
-						<h2>Formação</h2>
+						</div>
 					</header>
-					<p>Licenciatura em Informática, com experiência em desenvolvimento web e estágio curricular em ambiente empresarial.</p>
-					<ul class="actions special">
-						<li><a href="about.html" class="button">Saber mais</a></li>
-					</ul>
-				</article>
 
-				<article>
-					<header>
-						<h2>Competências</h2>
-					</header>
-					<p>PHP, Python, JavaScript, HTML, CSS, SQL, Git, APIs REST.</p>
-					<ul class="actions special">
-						<li><a href="skills.html" class="button">Ver competências</a></li>
-					</ul>
-				</article>
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
 
-				<article>
-					<header>
-						<h2>Projectos</h2>
-					</header>
-					<p>Projectos académicos e pessoais focados em desenvolvimento web e resolução de problemas reais.</p>
-					<ul class="actions special">
-						<li><a href="projects.html" class="button">Ver projectos</a></li>
-					</ul>
-				</article>
-			</section>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Olá, eu sou<br />O teu nome</h1><br />
+								<h1><p>Licenciado em Informática · Desenvolvimento Web</p></h1>
+								<ul class="actions">
+<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continuar</a></li>
+</ul>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Magna</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Lorem</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Feugiat</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Tempus</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Aliquam</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Veroeros</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic07.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Ipsum</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic08.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Dolor</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic09.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Nullam</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic10.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Ultricies</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic11.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Dictum</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic12.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Pretium</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
 
-		</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<section class="split contact">
-				<section>
-					<h3>Email</h3>
-					<p><a href="#">teuemail@email.com</a></p>
-				</section>
-				<section>
-					<h3>GitHub</h3>
-					<p><a href="#">github.com/teuusername</a></p>
-				</section>
-				<section>
-					<h3>LinkedIn</h3>
-					<p><a href="#">linkedin.com/in/teunome</a></p>
-				</section>
-			</section>
-		</footer>
+			</div>
 
-		<!-- Copyright -->
-		<div id="copyright">
-			<ul><li>&copy; O teu nome</li></ul>
-		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script>
-		function toggleMenu() {
-			document.getElementById('nav').classList.toggle('active');
-		}
-	</script>
-
-</body>
+	</body>
 </html>
