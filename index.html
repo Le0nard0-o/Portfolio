@@ -9,6 +9,52 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		/* Fundo bege claro */
+		body {
+			background-color: #f4efe9;
+		}
+
+		/* Botão menu */
+		.menu-toggle {
+			position: fixed;
+			top: 1.2rem;
+			right: 1.2rem;
+			background: #1e252d;
+			color: #fff;
+			border: none;
+			padding: 0.6rem 0.9rem;
+			font-size: 1rem;
+			cursor: pointer;
+			z-index: 1001;
+		}
+
+		/* Menu dropdown */
+		#nav {
+			position: fixed;
+			top: 0;
+			right: -260px;
+			width: 260px;
+			height: 100%;
+			background: #ffffff;
+			transition: right 0.3s ease;
+			z-index: 1000;
+			padding-top: 4rem;
+		}
+
+		#nav.active {
+			right: 0;
+		}
+
+		#nav ul.links {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#nav ul.links li {
+			border-top: 1px solid #eee;
+		}
+	</style>
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -31,6 +77,9 @@
 		</header>
 
 		<!-- Nav -->
+		<!-- Botão Menu -->
+		<button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+
 		<nav id="nav">
 			<ul class="links">
 				<li class="active"><a href="index.html">Home</a></li>
@@ -119,6 +168,11 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		function toggleMenu() {
+			document.getElementById('nav').classList.toggle('active');
+		}
+	</script>
 
 </body>
 </html>
