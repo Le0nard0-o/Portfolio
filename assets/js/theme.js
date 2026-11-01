@@ -12,13 +12,13 @@
 
         try {
             localStorage.setItem(storageKey, theme);
-        } catch (error) {
-            // Theme still works for the current page.
-        }
+        } catch (error) {}
 
         document.querySelectorAll("[data-theme-choice]").forEach(function (button) {
-            const isActive = button.dataset.themeChoice === theme;
-            button.setAttribute("aria-pressed", String(isActive));
+            button.setAttribute(
+                "aria-pressed",
+                String(button.dataset.themeChoice === theme)
+            );
         });
     }
 
@@ -26,17 +26,15 @@
 
     try {
         savedTheme = localStorage.getItem(storageKey) || "light";
-    } catch (error) {
-        savedTheme = "light";
-    }
+    } catch (error) {}
 
     applyTheme(savedTheme);
 
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll("[data-theme-choice]").forEach(function (button) {
-            button.addEventListener("click", function () {
-                applyTheme(button.dataset.themeChoice);
-            });
-        });
+    document.addEventListener("click", function (event) {
+        const button = event.target.closest("[data-theme-choice]");
+
+        if (!button) return;
+
+        applyTheme(button.dataset.themeChoice);
     });
 })();
