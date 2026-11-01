@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/skills.css" />
+	<link rel="stylesheet" href="assets/css/theme.css" />
+	<script src="assets/js/theme.js" defer></script>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -310,6 +312,24 @@
             </div>
         </div>
 
+		<div class="theme-switcher" role="group" aria-label="Choose colour theme">
+    <span class="theme-switcher-label">Theme</span>
+
+    <button type="button" data-theme-choice="light"
+            aria-label="Light mode" aria-pressed="true" title="Light mode">
+        ☀
+    </button>
+
+    <button type="button" data-theme-choice="dark"
+            aria-label="Dark mode" aria-pressed="false" title="Dark mode">
+        ☾
+    </button>
+
+    <button type="button" data-theme-choice="grey"
+            aria-label="Grey mode" aria-pressed="false" title="Grey mode">
+        ◐
+    </button>
+		</div>
         <footer id="footer">
             <div class="inner">
                 <ul class="copyright">
@@ -319,6 +339,8 @@
         </footer>
 
     </div>
+
+
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
