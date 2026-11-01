@@ -3177,6 +3177,8 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
+			padding-top: 0;
+    		padding-bottom: 0;
 		}
 
 			#footer > .inner > * > :last-child {
@@ -3196,7 +3198,7 @@ input, select, textarea {
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				margin-top: 5em;
+				margin-top: 2em;
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(88, 88, 88, 0.5);
