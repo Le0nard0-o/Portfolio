@@ -1,78 +1,206 @@
+
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Portfolio - Leonardo Zacarias</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		
-		<div id="wrapper">
+<head>
+    <title>Skills - Leonardo Zacarias</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-			<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#menu">Menu</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
+    <!-- Main template styles -->
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-			<!-- Menu -->
-			<nav id="menu">
-				<h2>Menu</h2>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">About Me</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Projects</a></li>
-				</ul>
-			</nav>
+    <!-- Skills page styles -->
+    <link rel="stylesheet" href="assets/css/skills.css" />
 
-			<!-- Main -->
-			<div id="main">
-				<div class="inner">
-					
-					<header>
-						<h3>Leonardo Zacarias</h3>
-						<p>Degree in Computer Science</p>
-					</header>
+    <!-- Technology icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-					<!-- Under Construction Message -->
-					<section>
-						<div style="text-align:center; margin-top:60px;">
-							Grid with all the skills acquired, with sections for languages and software
-							
-						</div>
-					</section>
-						<ul>
-								Languages/Technologies
-								<li>MySQL, SQLite, C, C#, Python, Java, JavaScript, PHP, TypeScript, Kotlin, R, .Net, Lisp, Rest, SAP Signavio, AJAX, Assembly, more.. (Continue) </li>
-							</ul>
-				</div>
-			</div>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
 
-			<!-- Footer (minimal, no template credits visible) -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="copyright">
-						<li>&copy; 2026 Leonardo Zacarias.</li>
-					</ul>
-				</div>
-			</footer>
+<body class="is-preload">
 
-		</div>
+    <div id="wrapper">
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-	</body>
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Page Introduction -->
+                <header class="skills-header">
+                    <h1>My Skills</h1>
+                    <p>
+                        Technologies, programming languages and tools
+                        I have worked with throughout my academic
+                        journey and personal projects.
+                    </p>
+                </header>
+
+                <!-- Programming Languages -->
+                <section class="skills-section">
+                    <h2>Programming Languages</h2>
+
+                    <div class="skills-grid">
+
+                        <article class="skill-card">
+                            <i class="devicon-c-plain colored"></i>
+                            <h3>C</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-csharp-plain colored"></i>
+                            <h3>C#</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-python-plain colored"></i>
+                            <h3>Python</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-java-plain colored"></i>
+                            <h3>Java</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <h3>JavaScript</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-php-plain colored"></i>
+                            <h3>PHP</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-typescript-plain colored"></i>
+                            <h3>TypeScript</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-kotlin-plain colored"></i>
+                            <h3>Kotlin</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-r-plain colored"></i>
+                            <h3>R</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon skill-icon--text">LISP</span>
+                            <h3>Lisp</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon skill-icon--text">ASM</span>
+                            <h3>Assembly</h3>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Databases -->
+                <section class="skills-section">
+                    <h2>Databases</h2>
+
+                    <div class="skills-grid">
+
+                        <article class="skill-card">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <h3>MySQL</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <i class="devicon-sqlite-plain colored"></i>
+                            <h3>SQLite</h3>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Web Technologies -->
+                <section class="skills-section">
+                    <h2>Web Technologies</h2>
+
+                    <div class="skills-grid">
+
+                        <article class="skill-card">
+                            <span class="skill-icon skill-icon--text">API</span>
+                            <h3>REST</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon skill-icon--text">AJAX</span>
+                            <h3>AJAX</h3>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Platforms and Tools -->
+                <section class="skills-section">
+                    <h2>Platforms & Tools</h2>
+
+                    <div class="skills-grid">
+
+                        <article class="skill-card">
+                            <i class="devicon-dotnetcore-plain colored"></i>
+                            <h3>.NET</h3>
+                        </article>
+
+                        <article class="skill-card">
+                            <span class="skill-icon skill-icon--text">SAP</span>
+                            <h3>SAP Signavio</h3>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li>&copy; 2026 Leonardo Zacarias.</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>

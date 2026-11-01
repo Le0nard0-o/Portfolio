@@ -1,0 +1,186 @@
+
+/* ========================================
+   SKILLS PAGE
+======================================== */
+
+/* Page introduction */
+
+.skills-header {
+    margin-bottom: 4em;
+}
+
+.skills-header h1 {
+    margin-bottom: 0.4em;
+}
+
+.skills-header p {
+    max-width: 750px;
+    font-size: 1.1em;
+}
+
+
+/* ========================================
+   SKILLS SECTIONS
+======================================== */
+
+.skills-section {
+    margin-bottom: 4em;
+}
+
+.skills-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.6em;
+    border-bottom: 2px solid rgba(144, 144, 144, 0.25);
+}
+
+
+/* ========================================
+   SKILLS GRID
+======================================== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.5em;
+}
+
+
+/* ========================================
+   SKILL CARD
+======================================== */
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 160px;
+    padding: 1.5em 1em;
+
+    background: #ffffff;
+    border: 1px solid rgba(144, 144, 144, 0.3);
+    border-radius: 6px;
+
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* Technology logos */
+
+.skill-card i {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+}
+
+
+/* Generic icons for technologies without a logo */
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.5em;
+    height: 3.5em;
+
+    margin-bottom: 0.5em;
+}
+
+.skill-icon--text {
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+    color: #585858;
+    border: 2px solid #585858;
+    border-radius: 8px;
+}
+
+
+/* Technology names */
+
+.skill-card h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   HOVER EFFECT
+======================================== */
+
+.skill-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #f2849e;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* Tablets */
+
+@media screen and (max-width: 980px) {
+
+    .skills-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.2em;
+    }
+
+}
+
+
+/* Mobile devices */
+
+@media screen and (max-width: 600px) {
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1em;
+    }
+
+    .skill-card {
+        min-height: 135px;
+        padding: 1em 0.5em;
+    }
+
+    .skill-card i {
+        font-size: 2.8em;
+    }
+
+    .skills-header {
+        margin-bottom: 3em;
+    }
+
+    .skills-section {
+        margin-bottom: 3em;
+    }
+
+}
+
+
+/* Very small screens */
+
+@media screen and (max-width: 350px) {
+
+    .skills-grid {
+        gap: 0.6em;
+    }
+
+    .skill-card h3 {
+        font-size: 0.9em;
+    }
+
+}
