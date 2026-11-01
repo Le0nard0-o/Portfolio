@@ -25,13 +25,13 @@
 }
 
 .skill-card {
-    min-height: 115px;
-    padding: 0.8rem 0.6rem;
+    min-height: 120px;
+    padding: 0.85rem 0.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.3rem;
+    gap: 0.35rem;
     text-align: center;
     background: #f7f7f7;
     border: 1px solid #ededed;
@@ -42,34 +42,34 @@
 .skill-card img,
 .skill-card i {
     display: block;
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: contain;
     margin: 0;
 }
 
 .skill-card h3 {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 700;
     line-height: 1.25;
     overflow-wrap: anywhere;
 }
 
 .skill-text-logo {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #585858;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 1;
 }
 
 .skill-text-logo--wide {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     letter-spacing: -0.06em;
 }
 
@@ -94,6 +94,6 @@
     }
 
     .skill-card {
-        min-height: 105px;
+        min-height: 110px;
     }
 }
