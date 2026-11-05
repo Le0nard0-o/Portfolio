@@ -16,11 +16,6 @@
 
         <header id="header">
             <div class="inner">
-                <a href="index.html" class="logo">
-                    <span class="symbol"><img src="images/logo.svg" alt="" /></span>
-                    <span class="title">Leonardo Zacarias</span>
-                </a>
-
                 <nav>
                     <ul>
                         <li><a href="#menu">Menu</a></li>
@@ -247,10 +242,23 @@
 
     </div>
 
-    <div class="theme-switcher">
-        <button type="button" data-theme-choice="light" aria-label="Light theme" aria-pressed="false">Light</button>
-        <button type="button" data-theme-choice="dark" aria-label="Dark theme" aria-pressed="false">Dark</button>
-        <button type="button" data-theme-choice="grey" aria-label="Grey theme" aria-pressed="false">Grey</button>
+    <div class="theme-switcher" role="group" aria-label="Choose colour theme">
+            <span class="theme-switcher-label">Theme</span>
+
+            <button type="button" data-theme-choice="light"
+                    aria-label="Light mode" aria-pressed="true" title="Light mode">
+                ☀
+            </button>
+
+            <button type="button" data-theme-choice="dark"
+                    aria-label="Dark mode" aria-pressed="false" title="Dark mode">
+                ☾
+            </button>
+
+            <button type="button" data-theme-choice="grey"
+                    aria-label="Grey mode" aria-pressed="false" title="Grey mode">
+                ◐
+            </button>
     </div>
 
     <script src="assets/js/jquery.min.js"></script>
