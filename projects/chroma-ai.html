@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Chroma AI | Leonardo Zacarias</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Chroma AI, an emotion-aware multimodal virtual assistant developed using Python, FastAPI and pretrained AI models." />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/project-detail.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+
+        <header id="header">
+            <div class="inner">
+                <a href="../index.html" class="logo">
+                    <span class="symbol"><img src="../images/logo.svg" alt="" /></span>
+                    <span class="title">Leonardo Zacarias</span>
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../skill.html">Skills</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+            <div class="inner">
+
+                <a href="../projects.html" class="back-to-projects">
+                    <span class="icon solid fa-arrow-left"></span>
+                    Back to Projects
+                </a>
+
+                <header class="project-detail-header">
+                    <div class="project-detail-title">
+                        <span class="project-detail-category">Artificial Intelligence</span>
+                        <h1>Chroma AI</h1>
+                        <p class="project-detail-subtitle">
+                            An emotion-aware virtual assistant designed to understand
+                            users through multiple communication channels and respond
+                            in a more personalised way.
+                        </p>
+                        <div class="project-detail-tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PyTorch</span>
+                            <span>Hugging Face</span>
+                            <span>OpenAI</span>
+                            <span>PyQt5</span>
+                        </div>
+                        <span class="project-detail-date">Internship Project · December 2025</span>
+                    </div>
+
+                    <div class="project-hero-image">
+                        <img src="../images/projects/chroma-ai/chroma-ai.png" alt="Chroma AI project" />
+                    </div>
+                </header>
+
+                <section class="project-section">
+                    <h2>Project Overview</h2>
+                    <p>
+                        Chroma AI is an emotion-aware virtual assistant developed during
+                        my internship at <strong>team.it / MoOngy</strong>. The project
+                        explores how artificial intelligence can interpret emotional
+                        cues from different sources and use that information to create
+                        more context-aware interactions.
+                    </p>
+                    <p>
+                        Instead of relying on a single input, the system analyses
+                        facial expressions, voice and written text. These independent
+                        predictions are then combined to estimate the user's emotional
+                        state. Based on the resulting classification, an AI language
+                        model generates a response adapted to the detected emotion and
+                        the assistant's selected personality.
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>Key Features</h2>
+
+                    <div class="project-feature-grid">
+                        <article class="project-feature">
+                            <span class="icon solid fa-camera"></span>
+                            <h3>Facial Emotion Recognition</h3>
+                            <p>
+                                Analyses facial expressions from camera input using
+                                pretrained image classification models.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-microphone"></span>
+                            <h3>Voice Emotion Recognition</h3>
+                            <p>
+                                Processes audio input to identify emotional patterns
+                                in the user's voice.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-comment-dots"></span>
+                            <h3>Text Emotion Analysis</h3>
+                            <p>
+                                Evaluates written messages to identify emotional
+                                indicators and complement the other modalities.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-brain"></span>
+                            <h3>Multimodal Emotion Fusion</h3>
+                            <p>
+                                Combines predictions from available modalities to
+                                produce a more comprehensive emotional classification.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-user-cog"></span>
+                            <h3>Customisable Personality</h3>
+                            <p>
+                                Supports different assistant personalities, including
+                                empathetic, cheerful, serious and sarcastic styles.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-comments"></span>
+                            <h3>AI-Generated Responses</h3>
+                            <p>
+                                Uses an LLM to generate responses informed by the
+                                detected emotional state and selected personality.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>Multimodal Approach</h2>
+                    <p>
+                        One of the main technical challenges was combining different
+                        types of input into a single emotional prediction. Each modality
+                        has its own model and produces its own classification scores.
+                        The system then applies a late-fusion strategy to combine
+                        these predictions.
+                    </p>
+
+                    <div class="project-modalities">
+                        <div class="modality-item">
+                            <span class="icon solid fa-image"></span>
+                            <h3>Image</h3>
+                            <p>Facial expressions</p>
+                            <strong>50%</strong>
+                        </div>
+                        <div class="modality-item">
+                            <span class="icon solid fa-comment"></span>
+                            <h3>Text</h3>
+                            <p>Written messages</p>
+                            <strong>30%</strong>
+                        </div>
+                        <div class="modality-item">
+                            <span class="icon solid fa-volume-up"></span>
+                            <h3>Audio</h3>
+                            <p>Voice patterns</p>
+                            <strong>20%</strong>
+                        </div>
+                    </div>
+
+                    <p class="project-note">
+                        These percentages represent the initial weighting used in the
+                        fusion strategy. The system also adjusts the contribution of
+                        low-confidence predictions and renormalises the weights when
+                        necessary.
+                    </p>
+
+                    <p>
+                        This approach allows the assistant to work with different
+                        combinations of available inputs, rather than requiring all
+                        three modalities every time.
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>Technical Implementation</h2>
+                    <p>
+                        The application was built around a Python backend using
+                        <strong>FastAPI</strong>, responsible for receiving input,
+                        coordinating the classification process and returning results
+                        to the desktop interface.
+                    </p>
+
+                    <div class="project-technical-grid">
+                        <div>
+                            <h3>Emotion Recognition Models</h3>
+                            <ul>
+                                <li>Facial emotion detection using pretrained image models.</li>
+                                <li>Audio emotion recognition using a Wav2Vec2-based model.</li>
+                                <li>Text classification using a fine-tuned DistilRoBERTa model.</li>
+                                <li>Confidence-based weighting and late fusion.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>Application Architecture</h3>
+                            <ul>
+                                <li>FastAPI backend for API endpoints and model coordination.</li>
+                                <li>PyQt5 desktop interface with a floating virtual assistant.</li>
+                                <li>Integration with an LLM for personalised responses.</li>
+                                <li>Speech-related features for voice interaction.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>Technologies & Tools</h2>
+                    <div class="project-tech-list">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>PyQt5</span>
+                        <span>PyTorch</span>
+                        <span>Hugging Face Transformers</span>
+                        <span>ONNX Runtime</span>
+                        <span>OpenAI API</span>
+                        <span>SpeechRecognition</span>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        Working on Chroma AI gave me practical experience integrating
+                        pretrained machine learning models into a complete application.
+                        I explored the challenges of multimodal systems, including
+                        differences between model outputs, confidence handling and
+                        combining predictions from independent sources.
+                    </p>
+                    <p>
+                        I also gained experience developing API-based backends,
+                        connecting AI services to a desktop interface and designing
+                        a system where several components need to work together
+                        reliably.
+                    </p>
+                </section>
+
+                <section class="project-gallery-section">
+                    <h2>Project Gallery</h2>
+                    <div class="project-gallery">
+                        <figure>
+                            <img src="../images/projects/chroma-ai/chroma-ai-interface.png" alt="Chroma AI desktop interface" />
+                            <figcaption>Desktop assistant interface</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/projects/chroma-ai/chroma-ai-architecture.png" alt="Chroma AI system architecture" />
+                            <figcaption>System architecture</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <div class="project-navigation">
+                    <a href="../projects.html" class="button">
+                        <span class="icon solid fa-arrow-left"></span>
+                        All Projects
+                    </a>
+                    <a href="floodborne.html" class="button primary">
+                        Next Project
+                        <span class="icon solid fa-arrow-right"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li>&copy; Leonardo Zacarias.</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="theme-switcher" role="group" aria-label="Choose colour theme">
+            <span class="theme-switcher-label">Theme</span>
+
+            <button type="button" data-theme-choice="light"
+                    aria-label="Light mode" aria-pressed="true" title="Light mode">
+                ☀
+            </button>
+
+            <button type="button" data-theme-choice="dark"
+                    aria-label="Dark mode" aria-pressed="false" title="Dark mode">
+                ☾
+            </button>
+
+            <button type="button" data-theme-choice="grey"
+                    aria-label="Grey mode" aria-pressed="false" title="Grey mode">
+                ◐
+            </button>
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+</html>
