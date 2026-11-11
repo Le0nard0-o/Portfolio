@@ -3308,6 +3308,12 @@ input, select, textarea {
 
 		}
 
+		.home-subtitle {
+    font-size: 1.15em;
+    opacity: 0.75;
+    margin-top: -0.5em;
+}
+
 /* Wrapper */
 
 	#wrapper > * > .inner {
