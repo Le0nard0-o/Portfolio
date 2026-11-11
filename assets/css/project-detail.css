@@ -267,3 +267,29 @@
         text-align: center;
     }
 }
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2em;
+    margin-top: 1.5em;
+}
+
+.project-gallery figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-gallery figure:hover img {
+    transform: scale(1.04);
+}
