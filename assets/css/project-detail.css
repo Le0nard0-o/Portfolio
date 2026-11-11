@@ -1,3 +1,4 @@
+
 .back-to-projects {
     display: inline-block;
     margin-bottom: 2em;
@@ -15,7 +16,7 @@
 }
 
 .project-detail-header {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 
 .project-detail-title {
@@ -53,6 +54,7 @@
 
 .project-detail-tags span,
 .project-tech-list span {
+    display: inline-block;
     padding: 0.45em 0.9em;
     border-radius: 20px;
     background: var(--tag-background, rgba(150, 150, 150, 0.15));
@@ -100,16 +102,27 @@
 
 .project-feature-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 1.5em;
     margin-top: 2em;
 }
 
 .project-feature {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
     padding: 1.5em;
     border: 1px solid var(--border-color, rgba(0, 0, 0, 0.15));
     border-radius: 8px;
     background: var(--card-background, rgba(255, 255, 255, 0.04));
+}
+
+.project-feature:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.project-feature:nth-child(5) {
+    grid-column: 4 / span 2;
 }
 
 .project-feature > .icon {
@@ -206,6 +219,8 @@
 
 .project-gallery figure {
     margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .project-gallery img {
@@ -214,6 +229,11 @@
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-gallery figure:hover img {
+    transform: scale(1.03);
 }
 
 .project-gallery figcaption {
@@ -235,6 +255,16 @@
     .project-feature-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .project-feature,
+    .project-feature:nth-child(4),
+    .project-feature:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .project-feature:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -251,6 +281,11 @@
     .project-technical-grid,
     .project-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .project-feature,
+    .project-feature:last-child:nth-child(odd) {
+        grid-column: auto;
     }
 
     .project-section,
