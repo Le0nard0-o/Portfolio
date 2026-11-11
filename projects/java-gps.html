@@ -1,0 +1,230 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Java GPS | Leonardo Zacarias</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Java GPS, a transport network and route-finding application developed using Java and JavaFX." />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/project-detail.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../skill.html">Skills</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+            <div class="inner">
+
+                <a href="../projects.html" class="back-to-projects">
+                    <span class="icon solid fa-arrow-left"></span>
+                    Back to Projects
+                </a>
+
+                <header class="project-detail-header">
+                    <div class="project-detail-title">
+                        <span class="project-detail-category">Software Development</span>
+                        <h1>Java GPS</h1>
+
+                        <p class="project-detail-subtitle">
+                            A Java application for exploring transport networks
+                            and finding routes based on travel time, cost and
+                            available transport modes.
+                        </p>
+
+                        <span class="project-detail-date">
+                            December 2024
+                        </span>
+                    </div>
+                </header>
+
+                <section class="project-section">
+                    <h2>Project Overview</h2>
+
+                    <p>
+                        Java GPS is a route-finding application developed using
+                        <strong>Java and JavaFX</strong> as a final project for
+                        the Advanced Programming course. The application allows
+                        users to explore transport networks, inspect stops and
+                        find routes between different locations.
+                    </p>
+
+                    <p>
+                        The application processes transport network data imported
+                        from CSV files and uses a custom Depth-First Search (DFS)
+                        algorithm with backtracking to explore possible routes.
+                        Users can search for the fastest or cheapest journeys,
+                        while also filtering results according to the available
+                        transport modes.
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>Main Features</h2>
+
+                    <div class="project-feature-grid">
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-route"></span>
+                            <h3>Route Finding Algorithm</h3>
+                            <p>
+                                Custom DFS algorithm with backtracking to explore
+                                possible paths and identify the fastest or
+                                cheapest routes.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-file-csv"></span>
+                            <h3>CSV Network Import</h3>
+                            <p>
+                                Import and process transport network data from
+                                CSV files to build the network used by the application.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-bus"></span>
+                            <h3>Transport Filtering</h3>
+                            <p>
+                                Filter routes according to available transport
+                                modes, including trains, buses, boats, walking
+                                and bicycles.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-map-marker-alt"></span>
+                            <h3>Stop &amp; Route Inspection</h3>
+                            <p>
+                                Explore transport stops and inspect the paths
+                                connecting different locations in the network.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-search-location"></span>
+                            <h3>Proximity Search</h3>
+                            <p>
+                                Find stops located within a specified number
+                                of connections from a selected location.
+                            </p>
+                        </article>
+
+                        <article class="project-feature">
+                            <span class="icon solid fa-chart-bar"></span>
+                            <h3>Network Statistics</h3>
+                            <p>
+                                Display analytical graphs highlighting the
+                                five most connected stops in the transport network.
+                            </p>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>Technologies &amp; Tools</h2>
+
+                    <p>
+                        The application was developed in Java, using JavaFX
+                        to build the graphical interface. IntelliJ IDEA was
+                        used as the development environment.
+                    </p>
+
+                    <div class="project-tech-list">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>IntelliJ IDEA</span>
+                        <span>CSV</span>
+                        <span>Discord</span>
+                    </div>
+                </section>
+
+                <section class="project-gallery-section">
+                    <h2>Project Gallery</h2>
+
+                    <div class="project-gallery">
+                        <figure>
+                            <img src="../images/projects/java-gps/java-gps-interface.png"
+                                 alt="Java GPS application interface" />
+                            <figcaption>Application Interface</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="../images/projects/java-gps/java-gps-routes.png"
+                                 alt="Java GPS route search results" />
+                            <figcaption>Route Finding</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <div class="project-navigation">
+                    <a href="../projects.html" class="button primary">
+                        <span class="icon solid fa-arrow-left"></span>
+                        All Projects
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="inner">
+                <ul class="copyright">
+                    <li>&copy; Leonardo Zacarias</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="theme-switcher" role="group" aria-label="Choose colour theme">
+        <span class="theme-switcher-label">Theme</span>
+
+        <button type="button" data-theme-choice="light"
+                aria-label="Light mode" aria-pressed="true" title="Light mode">
+            ☀
+        </button>
+
+        <button type="button" data-theme-choice="dark"
+                aria-label="Dark mode" aria-pressed="false" title="Dark mode">
+            ☾
+        </button>
+
+        <button type="button" data-theme-choice="grey"
+                aria-label="Grey mode" aria-pressed="false" title="Grey mode">
+            ◐
+        </button>
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+</html>
